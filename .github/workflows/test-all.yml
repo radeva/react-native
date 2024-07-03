@@ -31,7 +31,7 @@ jobs:
           fi
 
   build_android:
-    runs-on: 8-core-ubuntu
+    runs-on: [flyci-macos-14-m2, wingman]
     needs: [set_release_type]
     container:
       image: reactnativecommunity/react-native-android:latest
